@@ -1,25 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-
-
-</head>
-<body>
-    <?php
-        echo "<h3>Menu</h3>"
-    ?>
-    <div>
-        <nav>
-            <ul>
-                <li><a href="?pg=conteudo">Home</a></li>
-                <li><a href="?pg=quemsomos">Quem Somos</a></li>
-                <li><a href="?pg=clientes">Clientes</a></li>
-                <li><a href="?pg=faleconosco">Fale Conosco</a></li>
-            </ul>
-        </nav>
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="?pg=conteudo"> Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?pg=quemsomos"> Quem somos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  href="?pg=clientes"> Clientes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?pg=faleconosco"> Contato</a>
+            </li>
+        </ul>
     </div>
+</nav>
 
-</body>
-
-</html>
