@@ -1,4 +1,3 @@
-
 <?php
     //1ª etapa - conectando com servidor
     $conexao = mysqli_connect("localhost","root","");
@@ -8,12 +7,3 @@
     if(!$conexao){
         echo "<h2>Erro ao conectar o banco de dados</h2>";
     }
-
-$conexao = mysqli_connect("localhost","root","");
-
-$db = mysqli_select_db($conexao, "projeto1");
-
-if(!$conexao){
-    echo "<h2>Erro de conexão com o banco de dados</h2>";
-}
-
