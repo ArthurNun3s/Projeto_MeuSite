@@ -1,4 +1,5 @@
 <h2>Cadastro de Clientes</h2>
+
 <form action="?pg=clientes-cadastro" method="post">
     <label>Nome:</label>
     <input type="text" name="cliente" required><br>
@@ -9,3 +10,10 @@
 
     <input type="submit" value="Cadastrar cliente">
 </form>
+
+
+<form action="?pg=clientes-cadastro" method="post">
+    <label>Nome:</label>
+    <input type="text" name="cliente"><br>
+    <label>Cidade:</label>
+    <input type="text" name="cidade"><br>

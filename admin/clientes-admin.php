@@ -2,6 +2,7 @@
 
     require_once "config.inc.php";
 
+
     echo "<a href='?pg=clientes-form'>Cadastrar cliente</a>";
 
     echo "<h1>Lista de clientes</h1>";
@@ -23,4 +24,8 @@
         echo "<h3>Nenhum cliente cadastrado!</h3>";
     }
 
+
+
+
+    echo "<a href='?pg'";
 
