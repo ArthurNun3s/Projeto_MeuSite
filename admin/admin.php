@@ -1,5 +1,12 @@
 <?php
     echo "<h1>Painel Administrativo</h1>";
+
+    $login = True;
+    if($login == True){
+        include "principal.php";
+    }else{
+        include "login.php";
+    }
 ?>
 <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
     <div class="container-fluid">
@@ -11,7 +18,7 @@
                 <a class="nav-link" href="?pg=noticias"> Noticias</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link"  href="?pg=clientes"> Clientes</a>
+                <a class="nav-link"  href="?pg=clientes-admin"> Clientes</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="?pg=contato"> Dados de Contato</a>
