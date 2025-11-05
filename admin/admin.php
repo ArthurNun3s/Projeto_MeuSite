@@ -15,14 +15,16 @@
                 <a class="nav-link" href="?pg=paginas"> Gestão de Páginas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?pg=noticias"> Noticias</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link"  href="?pg=clientes-admin"> Clientes</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="?pg=contato"> Dados de Contato</a>
             </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="?pg=albuns-admin"> Discografia</a>
+            </li>
+
         </ul>
     </div>
 </nav>
