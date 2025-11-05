@@ -15,13 +15,11 @@
             echo "titulo: ".$dados['titulo']."<br>";
             echo "artista: ".$dados['artista']."<br>";
             echo "ano: ".$dados['ano']."<br>";
-            echo "gênero: ".$dados['gênero']."<br>";
+            echo "Gênero: ".$dados['genero']."<br>";
             echo " <a href='?pg=albuns-form-alterar&id=$dados[id]'>Editar</a>";
-            echo "| <a href='?pg=albuns-excluir&id=$dados[id]'>Excluir</a>";
+            echo "| <a href='?pg=albuns-excluir&id=$dados[id]' onclick=\"return confirm('Tem certeza que deseja excluir este álbum?');\">Excluir</a>";
             echo "<hr>";
         }
     }else{
         echo "<h3>Nenhum albuns cadastrado!</h3>";
     }
-
-
