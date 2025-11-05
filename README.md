@@ -1,36 +1,26 @@
-# Projeto 1 - Programação Web (UNIPÊ)
+# Projeto 1 - Site Institucional (UNIPÊ)
 **Aluno:** Arthur Nunes Campos Rodrigues
 
-## 1. Tema do Novo CRUD
-O tema escolhido para o segundo módulo de CRUD (conforme o requisito) foi **"Discografia"** (ou "Álbuns de Música").
+## Resumo do Projeto
+Este projeto é um site institucional dinâmico criado para a disciplina de Programação Web.
+
+Ele utiliza PHP e MySQL (MySQLi) e conta com um painel de administração (`/admin`) para gerenciar o conteúdo do site. O sistema é composto por dois módulos de CRUD (Create, Read, Update, Delete) principais, conforme solicitado:
+1.  **CRUD de Clientes** (Módulo base)
+2.  **CRUD de Discografia** (Novo módulo implementado)
 
 ---
 
-## 2. Instruções para Execução do Projeto
-Para rodar este projeto, por favor, siga os passos:
+## Instruções de Execução
+Para rodar este projeto em um ambiente local (XAMPP):
 
-1.  **Arquivos:**
-    * Clone este repositório (ou baixe o .zip) e coloque a pasta do projeto dentro do `htdocs` do seu XAMPP.
+1.  **Banco de Dados:**
+    * No phpMyAdmin, crie um novo banco de dados vazio (ex: `projeto1`).
+    * Selecione este banco e use a aba "Importar".
+    * Importe o arquivo **`projeto1_tabelas.sql`** (incluso neste repositório) para criar todas as tabelas.
 
-2.  **Banco de Dados (Essencial):**
-    * Abra o phpMyAdmin.
-    * Crie um novo banco de dados vazio (ex: `projeto1`).
-    * Selecione este novo banco e use a aba "Importar".
-    * Importe o arquivo **`projeto1_tabelas.sql`** (que está neste repositório). Isso criará todas as 4 tabelas (`clientes`, `albuns`, `contatos`, `paginas`).
+2.  **Arquivos:**
+    * Coloque esta pasta do projeto dentro do diretório `htdocs` do seu XAMPP.
 
 3.  **Acesso:**
-    * **Site Público:** `http://localhost/[caminho-do-projeto]/index.php`
-    * **Painel Admin:** `http://localhost/[caminho-do-projeto]/admin/admin.php`
-
----
-
-## 3. Desafios Implementados e Bônus
-O projeto cumpre todos os requisitos, incluindo:
-
-* **CRUD de Clientes:** O módulo base do professor.
-* **CRUD de Álbuns (Novo):** Um módulo completo de "Discografia" (C, R, U, D).
-* **Segurança (Bônus):** Todos os módulos (incluindo o de Clientes) foram refatorados para usar **Prepared Statements (mysqli_prepare)** para prevenir 100% de Injeção de SQL.
-* **Módulos Extras (Bônus):**
-    * **Gestão de Páginas:** Um CRUD completo para gerenciar o conteúdo de páginas como "Quem Somos" dinamicamente.
-    * **Leitor de Contatos:** Uma tela no admin para ler as mensagens enviadas pelo "Fale Conosco".
-    * **Homepage Dinâmica:** O carrossel da `index.php` é alimentado dinamicamente pelos álbuns cadastrados.
+    * **Site Público:** `http://localhost/[nome-da-pasta-do-projeto]/index.php`
+    * **Painel Admin:** `http://localhost/[nome-da-pasta-do-projeto]/admin/admin.php`
